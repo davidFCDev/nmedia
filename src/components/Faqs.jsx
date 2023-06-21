@@ -6,53 +6,47 @@ import backgroundImage from '@/images/background-faqs.jpg'
 const faqs = [
   [
     {
-      question: 'Does TaxPal handle VAT?',
+      question: 'What services do you offer for Instagram marketing?',
       answer:
-        'Well no, but if you move your company offshore you can probably ignore it.',
+        'We offer a range of services including content creation, community management, influencer partnerships, advertising, and analytics.',
     },
     {
-      question: 'Can I pay for my subscription via purchase order?',
-      answer: 'Absolutely, we are happy to take your money in all forms.',
+      question: 'How do you measure the success of an Instagram campaign?',
+      answer:
+        'We use a range of metrics to measure success, including engagement rates, reach, click-through rates, conversions, and overall ROI.',
     },
     {
-      question: 'How do I apply for a job at TaxPal?',
+      question:
+        'How do you come up with content ideas for my Instagram account?',
       answer:
-        'We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.',
+        'We conduct extensive research into your target audience, industry trends, and competitor activity to develop a content strategy that is tailored to your brand.',
     },
   ],
   [
     {
-      question: 'What was that testimonial about tax fraud all about?',
+      question:
+        'Can you guarantee an increase in followers and engagement on Instagram?',
       answer:
-        'TaxPal is just a software application, ultimately your books are your responsibility.',
+        "While we can't guarantee specific results, we use industry-proven tactics and strategies to increase followers and engagement on Instagram. Our focus is on delivering high-quality content and driving meaningful engagement that helps build a strong, loyal audience for your brand.",
     },
     {
-      question:
-        'TaxPal sounds horrible but why do I still feel compelled to purchase?',
+      question: 'What can the e-guide teach me?',
       answer:
-        'This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.',
-    },
-    {
-      question:
-        'I found other companies called TaxPal, are you sure you can use this name?',
-      answer:
-        'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
+        'Our e-guide is here to help you boost your social media presence with easy-to-follow tips and practical advice. By following our recommendations, you can say goodbye to the hassle of searching for marketing agencies.',
     },
   ],
   [
     {
-      question: 'How do you generate reports?',
+      question:
+        'How involved do I need to be in the Instagram marketing process?',
       answer:
-        'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
+        "We work with each client individually to determine their level of involvement in the process. Some clients prefer to be heavily involved in content creation and strategy development, while others prefer to take a more hands-off approach. We are flexible and can adapt to each client's needs.",
     },
     {
-      question: 'Can we expect more inventory features?',
-      answer: 'In life it’s really better to never expect anything at all.',
-    },
-    {
-      question: 'I lost my password, how do I get into my account?',
+      question:
+        'How do you stay up to date with changes to the Instagram algorithm and best practices?',
       answer:
-        'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
+        'Our team stays on top of industry trends and updates by attending conferences, participating in webinars, and conducting our own research. We are constantly learning and adapting our strategies to ensure that we are delivering the most effective Instagram marketing services possible.',
     },
   ],
 ]
@@ -80,10 +74,6 @@ export function Faqs() {
           >
             Frequently asked questions
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
-            If you can’t find what you’re looking for, email our support team
-            and if you’re lucky someone will get back to you.
-          </p>
         </div>
         <ul
           role="list"

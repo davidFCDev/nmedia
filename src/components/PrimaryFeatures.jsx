@@ -16,32 +16,6 @@ import {
   LockClosedIcon,
 } from '@heroicons/react/24/outline'
 
-const features = [
-  {
-    title: 'Payroll',
-    description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
-    image: screenshotPayroll,
-  },
-  {
-    title: 'Claim expenses',
-    description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
-    image: screenshotExpenses,
-  },
-  {
-    title: 'VAT handling',
-    description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
-    image: screenshotVatReturns,
-  },
-  {
-    title: 'Reporting',
-    description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
-    image: screenshotReporting,
-  },
-]
 
 export function PrimaryFeatures() {
   let [tabOrientation, setTabOrientation] = useState('horizontal')
@@ -102,25 +76,7 @@ export function PrimaryFeatures() {
           </div>
         </div>
       </div>
-      <svg
-        viewBox="0 0 1024 1024"
-        className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
-        aria-hidden="true"
-      >
-        <circle
-          cx={512}
-          cy={512}
-          r={512}
-          fill="url(#8d958450-c69f-4251-94bc-4e091a323369)"
-          fillOpacity="0.7"
-        />
-        <defs>
-          <radialGradient id="8d958450-c69f-4251-94bc-4e091a323369">
-            <stop stopColor="#7775D6" />
-            <stop offset={1} stopColor="#E935C1" />
-          </radialGradient>
-        </defs>
-      </svg>
+      
 
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

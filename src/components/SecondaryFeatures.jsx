@@ -10,33 +10,33 @@ const features = [
   {
     name: 'Instagram strategy development',
     description:
-      'Creating captivating Instagram content got you puzzled? Our tailored approach is designed to develop a unique strategy for your business. With audience analysis, content themes, posting schedules, and engagement tactics, we provide a clear roadmap for Instagram success.',
+      `Creating captivating Instagram content got you puzzled? Our tailored approach is designed to develop a <span class='text-[#8BDD59]'>unique strategy</span> for your business. With audience analysis, content themes, posting schedules, and engagement tactics, we provide a clear roadmap for Instagram success.`,
     icon: CloudArrowUpIcon,
   },
 
   {
     name: 'Stunning Instagram Content Creation',
     description:
-      'Want to enhance your Instagram content? Our professional content creation package is tailored for those who desire high-quality visuals with minimal effort. We offer custom-designed images, videos, and graphics that perfectly match your brand and messaging. Elevate your content, engage your audience, and increase Instagram engagement.',
+      `Want to enhance your Instagram content? Our professional content creation package is tailored for those who desire <span class='text-[#8BDD59]'>high-quality</span> visuals with minimal effort. We offer custom-designed images, videos, and graphics that perfectly match your brand and messaging. Elevate your content, engage your audience, and increase Instagram engagement.`,
     icon: LockClosedIcon,
   },
 
   {
     name: '24/7 Instagram Community Management',
     description:
-      'Our comprehensive community management package is designed to take care of it all. We monitor comments and DMs, respond to inquiries, and engage with your followers authentically and promptly. With our service, you can build a loyal following, nurture strong relationships with your audience, and boost engagement on Instagram.',
+      `Our comprehensive community management package is designed to take care of it all. We monitor comments and DMs, respond to inquiries, and engage with your followers authentically and promptly. With our service, you can build a loyal following, nurture strong relationships with your audience, and boost engagement on Instagram.`,
     icon: ArrowPathIcon,
   },
   {
     name: 'Instagram advertising',
     description:
-      'Struggling to reach your target audience on Instagram? We have the solution. Our targeted advertising package helps you: Create customized Instagram ads. Reach specific audiences based on demographics, interests, and behaviors. Drive conversions and boost revenue.',
+      `Struggling to reach your target audience on Instagram? <span class='text-[#8BDD59]'>We have the solution.</span> Our targeted advertising package helps you: Create customized Instagram ads. Reach specific audiences based on demographics, interests, and behaviors. Drive conversions and boost revenue.`,
     icon: FingerPrintIcon,
   },
   {
     name: 'Analytics and optimization',
     description:
-      'Our analytics and optimization package has you covered: Track key metrics and analyze data. Receive data-driven recommendations for improvement. Understand your account`s performance and make informed decisions for success. Experience faster results with detailed analytics and quick recommendations. It`s easier and less effort for you as we handle your analytics and optimization needs.',
+      `Our analytics and optimization package has you covered: Track <span class='text-[#8BDD59]'>key metrics</span> and analyze data. Receive data-driven recommendations for improvement. Understand your account's performance and make informed decisions for success. Experience faster results with detailed analytics and quick recommendations. It's easier and less effort for you as we handle your analytics and optimization needs.`,
     icon: Cog6ToothIcon,
   },
 ]
@@ -64,8 +64,8 @@ export function SecondaryFeatures() {
       <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
         <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
           {features.map((feature) => (
-            <div key={feature.name} className="relative pl-9">
-              <dt className="inline font-semibold text-white">
+            <div key={feature.name} className="relative pl-9 ">
+              <dt className="inline font-semibold text-[#8BDD59]">
                 <feature.icon
                   className="absolute left-1 top-1 h-5 w-5 text-indigo-500"
                   aria-hidden="true"
@@ -73,7 +73,8 @@ export function SecondaryFeatures() {
 
                 {feature.name}
               </dt>{' '}
-              <dd className="inline">{feature.description}</dd>
+              <br></br>
+              <dd className="inline" dangerouslySetInnerHTML={{ __html: feature.description }}></dd>
             </div>
           ))}
         </dl>

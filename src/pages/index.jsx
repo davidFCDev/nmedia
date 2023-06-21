@@ -8,7 +8,6 @@ import { Hero } from '@/components/Hero'
 import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
-import { Testimonials } from '@/components/Testimonials'
 import Image from 'next/image'
 import logo from '../images/logos/nnmedia_logo.png'
 
@@ -23,7 +22,8 @@ export default function Home() {
         />
       </Head>
       <Header />
-      <main>
+      <main >
+        <div className='bg-gradient-to-t from-[#9EED1E] to-black'>
         <Image
           src={logo}
           width={1000}
@@ -31,14 +31,16 @@ export default function Home() {
           alt="logo"
           className="mx-auto"
         />
+        </div>
+       
         <Hero />
         <PrimaryFeatures />
         <SecondaryFeatures />
         <CallToAction />
-        <Pricing />
-        {/* <Testimonials />
+        {/* <Pricing /> */}
+        {/* <Testimonials />*/}
 
-        <Faqs /> */}
+        <Faqs />
       </main>
       <Footer />
     </>
