@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-call-to-action.jpg'
+import Link from 'next/link'
 const clients = [
   {
     id: 1,
@@ -52,27 +53,27 @@ export function CallToAction() {
   return (
     <section
       id="get-started-today"
-      className="relative overflow-hidden bg-gray-900 py-32"
+      className="relative overflow-hidden bg-gradient-to-b from-black  via-gray-900 to-black "
     >
-      <div className="mx-auto max-w-7xl text-center">
-        <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
+      <div className="mx-auto max-w-7xl text-center ">
+        <h2 className="font-display text-3xl tracking-tight text-[#2BB849] underline underline-offset-8 sm:text-4xl">
           Don&apos;t let your competitors get ahead
         </h2>
-        <p className="mt-4 text-lg tracking-tight text-white">
+        <p className="mt-4 text-lg tracking-tight text-gray-100">
           Join the growing list of satisfied N&N Media clients who are crushing
           it on Instagram.
         </p>
-        <p className="mt-4 text-lg tracking-tight text-white">
+        <p className="mt-4 text-lg tracking-tight text-gray-100 mb-10">
           Don&apos;t just take our word for it, see what our clients have to
           say!
         </p>
-        <Button href="/register" color="white" className="mt-10">
-          Get 6 months free
-        </Button>
+        <Link href="" className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+          Contact Us
+        </Link>
       </div>
 
-      <div className="bg-white">
-        <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <div className="">
+        <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6  lg:max-w-7xl lg:px-8">
           <div className="mt-8 grid auto-rows-auto grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8">
             {clients.map((client) => (
               <div key={client.id} className="flex flex-col">
@@ -85,16 +86,16 @@ export function CallToAction() {
                     />
                   </div>
                   <div className="relative mt-4 text-center">
-                    <h3 className="text-2xl font-medium text-gray-900">
+                    <h3 className="text-2xl font-medium text-[#2BB849]">
                       {client.name}
                     </h3>
-                    <h3 className="text-lg font-medium text-gray-900">
+                    <h3 className="text-lg font-medium text-gray-50">
                       {client.description}
                     </h3>
-                    <h3 className="text-lg font-medium text-gray-900">
+                    <h3 className="text-lg font-medium text-gray-50">
                       {client.tag}
                     </h3>
-                    <p className="mt-1 text-sm text-gray-500">{client.quote}</p>
+                    <p className="mt-1 text-sm text-gray-300">{client.quote}</p>
                   </div>
                   <div className="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
                     <div
@@ -117,18 +118,18 @@ export function CallToAction() {
         </div>
       </div>
 
-      <div className="bg-white py-24 sm:py-32">
+      <div className=" py-24 ">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-            <p className="text-base font-semibold leading-7 text-indigo-600">
+            <p className="text-base font-semibold leading-7 text-[#2BB849]">
               LIMITED OFFER
             </p>
-            <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <h1 className="mt-2 text-3xl font-bold tracking-tight text-[#2BB849] sm:text-4xl underline underline-offset-4">
               Trusted by businesses all around the globe!
             </h1>
-            <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-gray-700 lg:max-w-none lg:grid-cols-2">
+            <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-gray-100 lg:max-w-none lg:grid-cols-2">
               <div>
-                <p>LIMITED OFFER</p>
+              
                 <p>Act fast – we&apos;re only accepting 5 clients per week!</p>
               </div>
               <div>
@@ -149,12 +150,9 @@ export function CallToAction() {
               </div>
             </div>
             <div className="mt-10 flex">
-              <a
-                href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Get started
-              </a>
+            <Link href="" className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                Contact Us
+            </Link>
             </div>
           </div>
         </div>

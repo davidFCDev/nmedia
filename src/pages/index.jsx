@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>TaxPal - Accounting made simple for small businesses</title>
+        <title>NNMedia - Revolutionize Your Instagram Presence</title>
         <meta
           name="description"
           content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
@@ -24,7 +24,7 @@ export default function Home() {
       <main >
       <Header />
 
-        <div className='bg-gradient-to-t from-[#9EED1E] via-[#4D5552] via-70% to-black '>
+        <div className='bg-gradient-to-t from-[#9EED1E] via-[#4D5552] via-70% to-gray-950 '>
         <Image
           src={logo}
           width={1000}

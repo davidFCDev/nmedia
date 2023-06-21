@@ -1,15 +1,15 @@
 import Link from 'next/link'
 
 import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
+import Image from 'next/image'
 import { NavLink } from '@/components/NavLink'
+import logo from '../images/logos/nnmedia_logo.png'
 
 export function Footer() {
   return (
-    <footer className="bg-slate-50">
+    <footer className="bg-gray-900">
       <Container>
         <div className="py-16">
-          <Logo className="mx-auto h-10 w-auto" />
           <nav className="mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 flex justify-center gap-x-6">
               <NavLink href="#features">Features</NavLink>
@@ -29,7 +29,7 @@ export function Footer() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-            Copyright &copy; {new Date().getFullYear()} TaxPal. All rights
+            Copyright &copy; {new Date().getFullYear()} NNMedia. All rights
             reserved.
           </p>
         </div>

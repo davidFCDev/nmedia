@@ -54,8 +54,8 @@ export function PrimaryFeatures() {
     },
   ]
   return (
-    <div className="relative isolate overflow-hidden bg-gradient-to-b from-black to-gray-600">
-      <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
+    <div className="relative isolate overflow-hidden bg-gradient-to-b from-black via-[#2BB849] via-90% to-gray-800">
+      <div className="px-6 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-50 sm:text-4xl">
             Get ready to stand out in the digital crowd and make your social
@@ -78,10 +78,10 @@ export function PrimaryFeatures() {
       </div>
       
 
-      <div className="bg-white py-24 sm:py-32">
+      <div className=" py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-50 sm:text-4xl">
               The Eye-Opening Statistics About Instagram You Need to See !
             </p>
           </div>
@@ -89,10 +89,10 @@ export function PrimaryFeatures() {
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
               {features.map((feature) => (
                 <div key={feature.name} className="relative pl-16">
-                  <dt className="text-base font-semibold leading-7 text-gray-900">
-                    <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <dt className="text-base font-semibold leading-7 text-gray-200">
+                    <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-[#9EED1E]">
                       <feature.icon
-                        className="h-6 w-6 text-white"
+                        className="h-6 w-6 text-black"
                         aria-hidden="true"
                       />
                     </div>
