@@ -30,7 +30,7 @@ export default function Home() {
           width={1000}
           height={1000}
           alt="logo"
-          className="mx-auto drop-shadow-xl animate-fade-up"
+          className="mx-auto drop-shadow-xl animate-fade-up animate-duration-[3000ms]"
         />
         </div>
        
