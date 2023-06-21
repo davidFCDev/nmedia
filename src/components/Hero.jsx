@@ -14,31 +14,25 @@ const navigation = [
 export function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
-    <div className="bg-white pb-32">
+    <div className="bg-gradient-to-b from-[#9EED1E] via-gray-800 via-80% to-black pb-32">
       <div className="relative isolate mx-auto">
         
-        <div className="mx-auto max-w-7xl px-6   lg:flex lg:items-center lg:gap-x-10 lg:px-8 ">
+        <div className="mx-auto max-w-7xl px-6  lg:flex lg:items-center lg:gap-x-10 lg:px-8 ">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-            <div className="flex">
-              <div className="relative flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                <span className="cursor-default font-semibold text-indigo-600">
-                  NN Media
-                </span>
-              </div>
-            </div>
-            <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+           
+            <h1 className="pt-10 max-w-lg text-4xl font-bold tracking-tight text-black lg:text-gray-200 sm:text-6xl">
               Revolutionize Your Instagram Presence
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-200">
               Maximize Engagement, Drive Sales, and Build Your Brand on
-              Instagram Today!.
+              Instagram Today!
             </p>
             <div className="mt-10 flex items-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-gray-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Learn More
+                Contact Us
               </a>
             </div>
           </div>

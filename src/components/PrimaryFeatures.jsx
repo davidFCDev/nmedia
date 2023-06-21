@@ -54,10 +54,10 @@ export function PrimaryFeatures() {
     },
   ]
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900">
+    <div className="relative isolate overflow-hidden bg-gradient-to-b from-black to-gray-600">
       <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-50 sm:text-4xl">
             Get ready to stand out in the digital crowd and make your social
             media soar to new heights.
           </h2>

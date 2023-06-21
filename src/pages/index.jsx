@@ -21,9 +21,10 @@ export default function Home() {
           content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
         />
       </Head>
-      <Header />
       <main >
-        <div className='bg-gradient-to-t from-[#9EED1E] to-black'>
+      <Header />
+
+        <div className='bg-gradient-to-t from-[#9EED1E] via-[#4D5552] via-70% to-black '>
         <Image
           src={logo}
           width={1000}

@@ -5,9 +5,8 @@ import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
-
+import { HomeIcon } from '@heroicons/react/20/solid'
 function MobileNavLink({ href, children }) {
   return (
     <Popover.Button as={Link} href={href} className="block w-full p-2">
@@ -91,12 +90,12 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="py-10 bg-black">
+    <header className="py-10 bg-black sticky top-0 z-50">
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
             <Link href="#" aria-label="Home">
-              <Logo className="h-10 w-auto" />
+              <HomeIcon className='text-white w-5 h-5'/>
             </Link>
             <div className="hidden md:flex md:gap-x-6 text-white">
               <NavLink href="#features" className=''>Features</NavLink>
@@ -106,13 +105,13 @@ export function Header() {
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden md:block">
-              <NavLink href="/login">Sign in</NavLink>
+              <NavLink href="/login">Newsletter</NavLink>
             </div>
-            <Button href="/register" color="blue">
+            <Link href="/register" className='text-gray-100 hover:text-gray-300'>
               <span>
                 Get started <span className="hidden lg:inline">today</span>
               </span>
-            </Button>
+            </Link>
             <div className="-mr-1 md:hidden">
               <MobileNavigation />
             </div>
