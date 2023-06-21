@@ -1,18 +1,4 @@
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { ChevronRightIcon } from '@heroicons/react/20/solid'
-import Image from 'next/image'
-
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
-
 export function Hero() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
     <div className="bg-gradient-to-b from-[#9EED1E] via-gray-800 via-80% to-black pb-32">
       <div className="relative isolate mx-auto">
@@ -20,7 +6,7 @@ export function Hero() {
         <div className="mx-auto max-w-7xl px-6  lg:flex lg:items-center lg:gap-x-10 lg:px-8 ">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
            
-            <h1 className="pt-10 max-w-lg text-4xl font-bold tracking-tight text-black lg:text-gray-200 sm:text-6xl">
+            <h1 className="pt-10 max-w-lg text-4xl font-bold tracking-tight text-black lg:text-gray-200 sm:text-6xl lg:drop-shadow-2xl">
               Revolutionize Your Instagram Presence
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-200">
@@ -30,13 +16,13 @@ export function Hero() {
             <div className="mt-10 flex items-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-gray-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Contact Us
               </a>
             </div>
           </div>
-          <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+          <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow drop-shadow-2xl">
             <svg
               viewBox="0 0 366 729"
               role="img"
