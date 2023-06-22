@@ -10,14 +10,14 @@ const features = [
   {
     name: 'Instagram strategy development',
     description:
-      `Creating captivating Instagram content got you puzzled? Our tailored approach is designed to develop a <span class='text-[#8BDD59]'>unique strategy</span> for your business. With audience analysis, content themes, posting schedules, and engagement tactics, we provide a clear roadmap for Instagram success.`,
+      `Creating captivating Instagram content got you puzzled? <br/> Our tailored approach is designed to develop a <span class='text-[#8BDD59]'>unique strategy</span> for your business. With audience analysis, content themes, posting schedules, and engagement tactics, we provide a clear roadmap for Instagram success.`,
     icon: CloudArrowUpIcon,
   },
 
   {
     name: 'Stunning Instagram Content Creation',
     description:
-      `Want to enhance your Instagram content? Our professional content creation package is tailored for those who desire <span class='text-[#8BDD59]'>high-quality</span> visuals with minimal effort. We offer custom-designed images, videos, and graphics that perfectly match your brand and messaging. Elevate your content, engage your audience, and increase Instagram engagement.`,
+      `Our professional content creation package is tailored for those who desire <span class='text-[#8BDD59]'>high-quality</span> visuals with minimal effort. We offer custom-designed images, videos, and graphics that perfectly match your brand and messaging. Elevate your content, engage your audience, and increase Instagram engagement.`,
     icon: LockClosedIcon,
   },
 
@@ -43,7 +43,7 @@ const features = [
 
 export function SecondaryFeatures() {
   return (
-    <div className="bg-gradient-to-b from-gray-800  to-black py-24">
+    <div className="bg-gradient-to-b from-gray-800  to-black py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-7xl sm:text-center">
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
@@ -55,7 +55,7 @@ export function SecondaryFeatures() {
         </div>
       </div>
       
-      <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+      <div className="mx-auto mt-16 max-w-7xl px-6  lg:px-8">
         <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
           {features.map((feature) => (
             <div key={feature.name} className="relative pl-9 ">

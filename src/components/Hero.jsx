@@ -1,7 +1,5 @@
-import { useRef } from "react"
 
 export function Hero() {
-  const revolutionizeRef = useRef(null)
   return (
     <div className="bg-gradient-to-b from-[#9EED1E] via-gray-800 via-80% to-black pb-32">
       <div className="relative isolate mx-auto">
@@ -9,7 +7,7 @@ export function Hero() {
         <div className="mx-auto max-w-7xl px-6  lg:flex lg:items-center lg:gap-x-10 lg:px-8 ">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
            
-            <h1 ref={revolutionizeRef} className="pt-10 max-w-lg text-4xl font-bold tracking-tight text-black lg:text-gray-200 sm:text-6xl lg:drop-shadow-2xl">
+            <h1 className="pt-10 max-w-lg text-4xl font-bold tracking-tight text-black lg:text-gray-200 sm:text-6xl lg:drop-shadow-2xl">
               Revolutionize Your Instagram Presence
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-200">

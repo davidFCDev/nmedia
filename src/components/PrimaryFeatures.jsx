@@ -1,39 +1,15 @@
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
-import { Tab } from '@headlessui/react'
-import clsx from 'clsx'
-
-import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 import {
   ArrowPathIcon,
   CloudArrowUpIcon,
   FingerPrintIcon,
   LockClosedIcon,
+  ArrowDownCircleIcon
 } from '@heroicons/react/24/outline'
 
 
 export function PrimaryFeatures() {
-  let [tabOrientation, setTabOrientation] = useState('horizontal')
-
-  useEffect(() => {
-    let lgMediaQuery = window.matchMedia('(min-width: 1024px)')
-
-    function onMediaQueryChange({ matches }) {
-      setTabOrientation(matches ? 'vertical' : 'horizontal')
-    }
-
-    onMediaQueryChange(lgMediaQuery)
-    lgMediaQuery.addEventListener('change', onMediaQueryChange)
-
-    return () => {
-      lgMediaQuery.removeEventListener('change', onMediaQueryChange)
-    }
-  }, [])
+ 
 
   const features = [
     {
@@ -54,7 +30,7 @@ export function PrimaryFeatures() {
     },
   ]
   return (
-    <div className="relative isolate overflow-hidden bg-gradient-to-b from-black via-[#2BB849] via-90% to-gray-800">
+    <div className="relative isolate overflow-hidden bg-gradient-to-b from-black via-[#2BB849]  to-gray-800">
       <div className="px-6 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-50 sm:text-4xl">
@@ -78,7 +54,7 @@ export function PrimaryFeatures() {
       </div>
       
 
-      <div className=" py-24 sm:py-32">
+      <div className=" py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-50 sm:text-4xl">

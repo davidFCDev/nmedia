@@ -53,7 +53,7 @@ export function CallToAction() {
   return (
     <section
       id="get-started-today"
-      className="relative overflow-hidden bg-gradient-to-b from-black  via-gray-900 to-black "
+      className="relative overflow-hidden bg-gradient-to-b from-black via-gray-900 to-black "
     >
       <div className="mx-auto max-w-7xl text-center ">
         <h2 className="font-display text-3xl tracking-tight text-[#2BB849] underline underline-offset-8 sm:text-4xl">
@@ -73,7 +73,7 @@ export function CallToAction() {
       </div>
 
       <div className="">
-        <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6  lg:max-w-7xl lg:px-8">
+        <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6  lg:max-w-7xl lg:px-8">
           <div className="mt-8 grid auto-rows-auto grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8">
             {clients.map((client) => (
               <div key={client.id} className="flex flex-col">
@@ -118,18 +118,17 @@ export function CallToAction() {
         </div>
       </div>
 
-      <div className=" py-24 ">
+      <div className=" py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-            <p className="text-base font-semibold leading-7 text-[#2BB849]">
+            <p className="text-center font-semibold leading-7 text-[#2BB849]">
               LIMITED OFFER
             </p>
-            <h1 className="mt-2 text-3xl font-bold tracking-tight text-[#2BB849] sm:text-4xl underline underline-offset-4">
+            <h1 className="mt-2 text-3xl font-bold tracking-tight text-[#2BB849] sm:text-4xl underline underline-offset-4 text-center">
               Trusted by businesses all around the globe!
             </h1>
-            <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-gray-100 lg:max-w-none lg:grid-cols-2">
-              <div>
-              
+            <div className="mt-10 grid max-w-xl items-center mx-auto text-center grid-cols-1 gap-8 text-base leading-7 text-gray-100 lg:max-w-none lg:grid-cols-2">
+              <div className='text-base lg:text-xl'>
                 <p>Act fast – we&apos;re only accepting 5 clients per week!</p>
               </div>
               <div>
@@ -149,11 +148,7 @@ export function CallToAction() {
                 </p>
               </div>
             </div>
-            <div className="mt-10 flex">
-            <Link href="" className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                Contact Us
-            </Link>
-            </div>
+          
           </div>
         </div>
       </div>
