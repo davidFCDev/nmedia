@@ -68,7 +68,7 @@ export function Contacts() {
     return (
         <div
             className="relative isolate bg-gradient-to-b from-green-800 to-gray-900 py-16 pb-12 lg:pb-0"
-            id="contact"
+            id="contacts"
         >
             <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
                 <div className="relative px-6 lg:static lg:px-8 ">
@@ -150,7 +150,7 @@ export function Contacts() {
                                         name={'name'}
                                         autoComplete="given-name"
                                         inputClass={
-                                            'block w-full rounded-2xl border-0 bg-white py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6'
+                                            'block w-full rounded-2xl border-0 bg-white py-2 px-3.5 text-black shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6'
                                         }
                                         groupClass="my-2"
                                         label={'Name*'}

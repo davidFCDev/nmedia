@@ -42,7 +42,10 @@ const faqs = [
 
 export function Faqs() {
     return (
-        <div className="bg-gradient-to-b from-black via-[#2BB849] to-green-800">
+        <div
+            className="bg-gradient-to-b from-black via-[#2BB849] to-green-800"
+            id="faq"
+        >
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl divide-y divide-white/10">
                     <h2 className="text-2xl font-bold leading-10 tracking-tight text-white">
@@ -81,7 +84,7 @@ export function Faqs() {
                                             as="dd"
                                             className="mt-2 pr-12"
                                         >
-                                            <p className="text-base leading-7 text-gray-300">
+                                            <p className="text-base leading-7 text-gray-100">
                                                 {faq.answer}
                                             </p>
                                         </Disclosure.Panel>
