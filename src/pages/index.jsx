@@ -12,6 +12,7 @@ import Image from 'next/image'
 import logo from '../images/logos/nnmedia_logo.png'
 import { ArrowDownIcon } from '@heroicons/react/24/outline'
 import { Contacts } from '../components/Contacts'
+import { Toaster } from 'react-hot-toast'
 
 export default function Home() {
     return (
@@ -24,6 +25,30 @@ export default function Home() {
                 />
             </Head>
             <main>
+                <Toaster
+                    toastOptions={{
+                        position: 'top-left',
+                        success: {
+                            className:
+                                'max-w-sm w-full bg-white shadow-lg rounded-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden',
+                            style: {
+                                background: '#176735',
+                                color: '#fff',
+                            },
+                        },
+                        error: {
+                            className:
+                                'max-w-sm w-full bg-white shadow-lg rounded-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden',
+                            style: {
+                                background: 'red',
+                                color: 'white',
+                            },
+                        },
+                    }}
+                    containerStyle={{
+                        top: 80,
+                    }}
+                />
                 <Header />
 
                 <div className="bg-gradient-to-t from-[#9EED1E] via-[#4D5552] via-70% to-gray-950 pb-8">
