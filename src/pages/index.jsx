@@ -41,7 +41,6 @@ export default function Home() {
         <PrimaryFeatures />
         <SecondaryFeatures />
         <CallToAction />
-        {/* <Pricing /> */}
         {/* <Testimonials />*/}
 
         <Faqs />
