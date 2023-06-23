@@ -1,17 +1,12 @@
-import {
-    BuildingOffice2Icon,
-    EnvelopeIcon,
-    PhoneIcon,
-} from '@heroicons/react/24/outline'
 import * as Yup from 'yup'
 import { Form, Formik } from 'formik'
 import { useState } from 'react'
 import FormField from './FormField'
 import toast from 'react-hot-toast'
 import axios from 'axios'
-import facebook from '@/images/facebook.png'
-import instagram from '@/images/instagram.png'
 import Image from 'next/image'
+import { CheckCircleIcon, CheckIcon } from '@heroicons/react/24/outline'
+
 export function Contacts() {
     const ContactSchema = Yup.object().shape({
         email: Yup.string()
@@ -72,10 +67,62 @@ export function Contacts() {
 
     return (
         <div
-            className="relative isolate bg-gray-900 pb-12 lg:pb-0"
+            className="relative isolate bg-gradient-to-b from-green-800 to-gray-900 py-16 pb-12 lg:pb-0"
             id="contact"
         >
             <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+                <div className="relative px-6 lg:static lg:px-8 ">
+                    <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+                        <h2 className="text-3xl font-bold tracking-tight text-white">
+                            Let&apos;s discuss your project
+                        </h2>
+                        <p className="mt-6 text-lg leading-8 text-gray-300">
+                            What are we going to discuss?
+                        </p>
+                        <p className="mt-6 flex items-center text-lg leading-8 text-gray-300">
+                            <CheckCircleIcon className="mr-5 h-6 w-6   text-[#2BB849]" />
+                            Your goals for your business&apos; social media
+                            presence
+                        </p>
+                        <p className="mt-6 flex items-center text-lg leading-8 text-gray-300">
+                            <CheckCircleIcon className="mr-5 h-6 w-6   text-[#2BB849]" />
+                            Making a custom-tailored offer for your business
+                        </p>
+                        <p className="mt-6 flex items-center text-lg leading-8 text-gray-300">
+                            <CheckCircleIcon className="mr-5 h-6 w-6   text-[#2BB849]" />
+                            The type of content you want us to create
+                        </p>
+                        <section className=" py-12">
+                            <div className="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none">
+                                <div className="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
+                                    <figure className="mt-10 flex flex-auto flex-col justify-between">
+                                        <blockquote className="text-lg italic leading-8 text-white">
+                                            <p>
+                                                “Creative content, effective
+                                                results - I believe in the power
+                                                of great content to connect with
+                                                your audience and drive
+                                                engagement. Let us help you
+                                                create content that leaves a
+                                                lasting impression.”
+                                            </p>
+                                        </blockquote>
+                                        <figcaption className="mt-10 flex items-center gap-x-6">
+                                            <div className="text-base">
+                                                <div className="font-semibold text-white">
+                                                    Nikola Nikolov
+                                                </div>
+                                                <div className="mt-1 text-gray-300">
+                                                    Marketing Manager at NNMedia
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
                 <Formik
                     initialValues={{ ...contactDetails }}
                     validationSchema={ContactSchema}
@@ -96,17 +143,17 @@ export function Contacts() {
                                 name="form-name"
                                 value="contact"
                             />
-                            <div className="mx-auto max-w-xl px-8 lg:mr-0 lg:max-w-lg lg:px-0 lg:pt-28">
+                            <div className="mx-auto max-w-xl rounded-2xl border-2 border-green-300 bg-gradient-to-t from-green-600 to-green-800 p-8 lg:mr-0 lg:max-w-lg">
                                 <div className="mt-2.5">
                                     <FormField
                                         type={'text'}
                                         name={'name'}
                                         autoComplete="given-name"
                                         inputClass={
-                                            'block w-full rounded-md border-0 bg-white/5 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6'
+                                            'block w-full rounded-2xl border-0 bg-white py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6'
                                         }
                                         groupClass="my-2"
-                                        label={'Name'}
+                                        label={'Name*'}
                                         labelClass={
                                             'block text-sm font-semibold leading-6 text-white'
                                         }
@@ -121,10 +168,10 @@ export function Contacts() {
                                         name={'email'}
                                         autoComplete="email"
                                         inputClass={
-                                            'block w-full rounded-md border-0 bg-white/5 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6'
+                                            'block w-full rounded-2xl border-0 bg-white py-2 px-3.5 text-black shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6'
                                         }
                                         groupClass="my-2"
-                                        label={'Email'}
+                                        label={'Email address*'}
                                         labelClass={
                                             'block text-sm font-semibold leading-6 text-white'
                                         }
@@ -138,10 +185,10 @@ export function Contacts() {
                                         name={'phone'}
                                         autoComplete="tel"
                                         inputClass={
-                                            'block w-full rounded-md border-0 bg-white/5 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6'
+                                            'block w-full rounded-2xl border-0 bg-white py-2 px-3.5 text-black shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6'
                                         }
                                         groupClass="my-2"
-                                        label={'Phone'}
+                                        label={'Phone Number*'}
                                         labelClass={
                                             'block text-sm font-semibold leading-6 text-white'
                                         }
@@ -154,12 +201,10 @@ export function Contacts() {
                                         type={'text'}
                                         name={'whenToContact'}
                                         inputClass={
-                                            'block w-full rounded-md border-0 bg-white/5 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6'
+                                            'block w-full rounded-2xl border-0 bg-white py-2 px-3.5 text-black shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6'
                                         }
                                         groupClass="my-2"
-                                        label={
-                                            'When would be a good time to contact you?'
-                                        }
+                                        label={'When should we contact you?*'}
                                         labelClass={
                                             'block text-sm font-semibold leading-6 text-white'
                                         }
@@ -171,11 +216,11 @@ export function Contacts() {
                                             type={'textarea'}
                                             name={'message'}
                                             inputClass={
-                                                'block w-full rounded-md border-0 bg-white/5 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6'
+                                                'block w-full rounded-2xl border-0 bg-white py-2 px-3.5 text-black shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6'
                                             }
                                             groupClass="my-2"
                                             label={
-                                                'Tell us about your business/project'
+                                                'Tell us about your business/project*'
                                             }
                                             labelClass={
                                                 'block text-sm font-semibold leading-6 text-white'
@@ -185,12 +230,12 @@ export function Contacts() {
                                         />
                                     </div>
                                 </div>
-                                <div className="mt-8 flex justify-end">
+                                <div className="mt-8 flex justify-center">
                                     <button
                                         type="submit"
                                         onClick={handleSubmit}
                                         disabled={loading}
-                                        className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                                        className="w-full rounded-full bg-green-800 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xl"
                                     >
                                         {loading && (
                                             <svg
@@ -210,7 +255,7 @@ export function Contacts() {
                                                 />
                                             </svg>
                                         )}
-                                        {'Send'}
+                                        Get in Touch
                                     </button>
                                 </div>
                             </div>

@@ -11,41 +11,43 @@ import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import Image from 'next/image'
 import logo from '../images/logos/nnmedia_logo.png'
 import { ArrowDownIcon } from '@heroicons/react/24/outline'
+import { Contacts } from '../components/Contacts'
 
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>NNMedia - Revolutionize Your Instagram Presence</title>
-        <meta
-          name="description"
-          content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
-        />
-      </Head>
-      <main >
-      <Header />
+      <>
+          <Head>
+              <title>NNMedia - Revolutionize Your Instagram Presence</title>
+              <meta
+                  name="description"
+                  content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
+              />
+          </Head>
+          <main>
+              <Header />
 
-        <div className='bg-gradient-to-t from-[#9EED1E] via-[#4D5552] via-70% to-gray-950 pb-8'>
-        <Image
-          src={logo}
-          width={1000}
-          height={1000}
-          alt="logo"
-          className="mx-auto drop-shadow-xl animate-fade-up"
-        />
-        <ArrowDownIcon className='w-9 h-9 invisible lg:visible text-gray-900 bg-transparent mx-auto cursor-pointer'/>
-        </div>
-       
-        <Hero />
-        <PrimaryFeatures />
-        <SecondaryFeatures />
-        <CallToAction />
-        {/* <Testimonials />*/}
+              <div className="bg-gradient-to-t from-[#9EED1E] via-[#4D5552] via-70% to-gray-950 pb-8">
+                  <Image
+                      src={logo}
+                      width={1000}
+                      height={1000}
+                      alt="logo"
+                      className="mx-auto animate-fade-up drop-shadow-xl"
+                  />
+                  <ArrowDownIcon className="invisible mx-auto h-9 w-9 cursor-pointer bg-transparent text-gray-900 lg:visible" />
+              </div>
 
-        <Faqs />
-      </main>
-      <Footer />
-    </>
+              <Hero />
+              <PrimaryFeatures />
+              <SecondaryFeatures />
+              <CallToAction />
+              {/* <Testimonials />*/}
+
+              <Faqs />
+              <Contacts />
+          </main>
+          <Footer />
+      </>
   )
 }
