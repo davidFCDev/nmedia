@@ -1,17 +1,18 @@
 import Link from 'next/link'
-
+import { useTranslation } from 'next-i18next'
 export function Hero() {
+    const { t } = useTranslation()
+
     return (
         <div className="bg-gradient-to-b from-[#9EED1E] via-gray-800 via-80% to-black pb-32">
             <div className="relative isolate mx-auto">
                 <div className="mx-auto max-w-7xl px-6  lg:flex lg:items-center lg:gap-x-10 lg:px-8 ">
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                         <h1 className="max-w-lg pt-10 text-4xl font-bold tracking-tight text-black sm:text-6xl lg:text-gray-200 lg:drop-shadow-2xl">
-                            Revolutionize Your Instagram Presence
+                            {t('title')}
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-gray-200">
-                            Maximize Engagement, Drive Sales, and Build Your
-                            Brand on Instagram Today!
+                            {t('subtitle')}
                         </p>
                         <div className="mt-10 flex items-center gap-x-6">
                             <Link

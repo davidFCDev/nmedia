@@ -67,7 +67,7 @@ export function Contacts() {
 
     return (
         <div
-            className="relative isolate bg-gradient-to-b from-green-800 to-gray-900 py-16 pb-12 lg:pb-0"
+            className="relative isolate bg-gradient-to-b from-green-800 to-gray-900 px-8 py-36 lg:pb-0"
             id="contacts"
         >
             <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">

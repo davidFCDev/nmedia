@@ -13,6 +13,7 @@ import logo from '../images/logos/nnmedia_logo.png'
 import { ArrowDownIcon } from '@heroicons/react/24/outline'
 import { Contacts } from '../components/Contacts'
 import { Toaster } from 'react-hot-toast'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Home() {
     return (
@@ -65,10 +66,21 @@ export default function Home() {
                 <PrimaryFeatures />
                 <SecondaryFeatures />
                 <CallToAction />
+                <Pricing />
                 <Faqs />
+
                 <Contacts />
             </main>
             <Footer />
         </>
     )
+}
+
+export async function getStaticProps({ locale }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale)),
+            // Will be passed to the page component as props
+        },
+    }
 }

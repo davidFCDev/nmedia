@@ -76,7 +76,7 @@ function MobileNavigation() {
                         as="div"
                         className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
                     >
-                        <MobileNavLink href="#features">Features</MobileNavLink>
+                        <MobileNavLink href="#features">Services</MobileNavLink>
                         <MobileNavLink href="#projects">Projects</MobileNavLink>
                         <MobileNavLink href="#pricing">Pricing</MobileNavLink>
                         <hr className="m-2 border-slate-300/40" />
@@ -98,8 +98,8 @@ export function Header() {
                             <HomeIcon className="h-5 w-5 text-white" />
                         </Link>
                         <div className="hidden text-white md:flex md:gap-x-6">
-                            <NavLink href="#features" className="">
-                                Features
+                            <NavLink href="#services" className="">
+                                Services
                             </NavLink>
                             <NavLink href="#projects">Projects</NavLink>
                             <NavLink href="#pricing">Pricing</NavLink>
