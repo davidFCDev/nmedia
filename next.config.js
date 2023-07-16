@@ -6,6 +6,9 @@ const nextConfig = {
     scrollRestoration: true,
   },
   i18n,
+  images: {
+    domains: ['www.facebook.com'],
+  }
 }
 
 module.exports = nextConfig

@@ -13,7 +13,7 @@ export function CallToAction() {
             description: t('clients.nerone.occupation'),
             tag: t('clients.nerone.tag'),
             quote: `"${t('clients.nerone.testimonial')}"`,
-            href: '#',
+            href: 'https://www.instagram.com/neronestudio/',
             hasVideo: true,
             imageSrc: 'https://www.youtube.com/embed/AnV4jEr5r3Q',
             imageAlt:
@@ -25,7 +25,7 @@ export function CallToAction() {
             description: t('clients.after.occupation'),
             tag: t('clients.after.tag'),
             quote: `"${t('clients.after.testimonial')}"`,
-            href: '#',
+            href: 'https://www.instagram.com/after.the.store/',
             hasVideo: false,
             imageSrc:
                 'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
@@ -39,7 +39,7 @@ export function CallToAction() {
             description: 'Streetwear Brand',
             tag: '@logoto_clothing',
             quote: '"Very punctual and creative, fully developed multiple projects following our brand values"',
-            href: '#',
+            href: 'https://www.instagram.com/logoto_clothing/',
             hasVideo: true,
             imageSrc: 'https://www.youtube.com/embed/gLIWDpfqzRM',
             imageAlt:
@@ -49,6 +49,8 @@ export function CallToAction() {
             id: 4,
             name: 'Shortened',
             hasVideo: true,
+            href: '',
+
             imageSrc: 'https://www.youtube.com/embed/N0KiNuaP3cQ',
             imageAlt:
                 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
@@ -57,7 +59,17 @@ export function CallToAction() {
             id: 5,
             name: 'Apeic Wristwraps',
             hasVideo: true,
+            href: '',
             imageSrc: 'https://www.youtube.com/embed/DtlL3zBszPM',
+            imageAlt:
+                'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
+        },
+        {
+            id: 6,
+            name: 'ADHD x DAVINCI CLUB HYPE AFTERVIDEO',
+            hasVideo: true,
+            href: '',
+            imageSrc: 'https://www.youtube.com/embed/NA5dLs8B5m8',
             imageAlt:
                 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
         },
@@ -122,9 +134,13 @@ export function CallToAction() {
                                             )}
                                         </div>
                                         <div className="relative mt-4 text-center">
-                                            <h3 className="text-2xl font-medium text-[#2BB849]">
+                                            <Link
+                                                className="hover:cursor text-2xl font-medium text-[#2BB849]"
+                                                href={client.href}
+                                                target="_blank"
+                                            >
                                                 {client.name}
-                                            </h3>
+                                            </Link>
                                             <h3 className="text-lg font-medium text-gray-50">
                                                 {client.description}
                                             </h3>
