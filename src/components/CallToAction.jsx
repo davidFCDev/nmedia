@@ -49,7 +49,7 @@ export function CallToAction() {
             id: 4,
             name: 'Shortened',
             hasVideo: true,
-            href: '',
+            href: '/',
 
             imageSrc: 'https://www.youtube.com/embed/N0KiNuaP3cQ',
             imageAlt:
@@ -59,7 +59,7 @@ export function CallToAction() {
             id: 5,
             name: 'Apeic Wristwraps',
             hasVideo: true,
-            href: '',
+            href: '/',
             imageSrc: 'https://www.youtube.com/embed/DtlL3zBszPM',
             imageAlt:
                 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
@@ -68,7 +68,7 @@ export function CallToAction() {
             id: 6,
             name: 'ADHD x DAVINCI CLUB HYPE AFTERVIDEO',
             hasVideo: true,
-            href: '',
+            href: '/',
             imageSrc: 'https://www.youtube.com/embed/NA5dLs8B5m8',
             imageAlt:
                 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
@@ -134,19 +134,19 @@ export function CallToAction() {
                                             )}
                                         </div>
                                         <div className="relative mt-4 text-center">
-                                            <Link
-                                                className="hover:cursor text-2xl font-medium text-[#2BB849]"
-                                                href={client.href}
-                                                target="_blank"
-                                            >
+                                            <h3 className="hover:cursor text-2xl font-medium text-gray-50">
                                                 {client.name}
-                                            </Link>
+                                            </h3>
                                             <h3 className="text-lg font-medium text-gray-50">
                                                 {client.description}
                                             </h3>
-                                            <h3 className="text-lg font-medium text-gray-50">
+                                            <Link
+                                                className="text-lg font-medium text-[#2BB849] hover:underline"
+                                                href={client.href}
+                                                target="_blank"
+                                            >
                                                 {client.tag}
-                                            </h3>
+                                            </Link>
                                             <p className="mt-1 text-sm text-gray-300">
                                                 {client.quote}
                                             </p>

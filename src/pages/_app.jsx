@@ -12,6 +12,10 @@ function App({ Component, pageProps }) {
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
                 ></meta>
+                <meta
+                    http-equiv="Permissions-Policy"
+                    content="interest-cohort=()"
+                ></meta>
 
                 {/* <meta
                     property="og:image"
@@ -106,13 +110,13 @@ function App({ Component, pageProps }) {
             {/* <!-- End Meta Pixel Code --> */}
 
             {/* <!-- Clarity Code --> */}
-            <Script id="clarity" strategy="afterInteractive">
+            <Script id="clarityCode" strategy="afterInteractive">
                 {`
-           (function(c,l,a,r,i,t,y){
-            c[a]=c[a]function(){(c[a].q=c[a].q[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/%22+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "hyrk1w71i7");
+             (function(c,l,a,r,i,t,y){
+                c[a]=c[a]function(){(c[a].q=c[a].q[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/%22+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "hyrk1w71i7");
         `}
             </Script>
             <Component {...pageProps} />
