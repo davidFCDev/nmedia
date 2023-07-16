@@ -7,6 +7,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { NavLink } from '@/components/NavLink'
 import { HomeIcon } from '@heroicons/react/20/solid'
+import { useTranslation } from 'next-i18next'
 function MobileNavLink({ href, children }) {
     return (
         <Popover.Button as={Link} href={href} className="block w-full p-2">
@@ -43,6 +44,7 @@ function MobileNavIcon({ open }) {
 }
 
 function MobileNavigation() {
+    const { t } = useTranslation()
     return (
         <Popover>
             <Popover.Button
@@ -76,9 +78,15 @@ function MobileNavigation() {
                         as="div"
                         className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
                     >
-                        <MobileNavLink href="#features">Services</MobileNavLink>
-                        <MobileNavLink href="#projects">Projects</MobileNavLink>
-                        <MobileNavLink href="#pricing">Pricing</MobileNavLink>
+                        <MobileNavLink href="#features">
+                            {t('services')}
+                        </MobileNavLink>
+                        <MobileNavLink href="#projects">
+                            {t('projects')}
+                        </MobileNavLink>
+                        <MobileNavLink href="#pricing">
+                            {t('prices')}
+                        </MobileNavLink>
                         <hr className="m-2 border-slate-300/40" />
                         <MobileNavLink href="#faq">FAQ</MobileNavLink>
                     </Popover.Panel>
@@ -89,6 +97,8 @@ function MobileNavigation() {
 }
 
 export function Header() {
+    const { t } = useTranslation()
+
     return (
         <header className="sticky top-0 z-50 bg-gradient-to-t from-gray-950 to-gray-800 py-10">
             <Container>
@@ -99,10 +109,10 @@ export function Header() {
                         </Link>
                         <div className="hidden text-white md:flex md:gap-x-6">
                             <NavLink href="#services" className="">
-                                Services
+                                {t('services')}
                             </NavLink>
-                            <NavLink href="#projects">Projects</NavLink>
-                            <NavLink href="#pricing">Pricing</NavLink>
+                            <NavLink href="#projects">{t('projects')}</NavLink>
+                            <NavLink href="#pricing">{t('prices')}</NavLink>
                         </div>
                     </div>
                     <div className="flex items-center gap-x-5 md:gap-x-8">
@@ -115,8 +125,10 @@ export function Header() {
                             className="text-gray-100 hover:text-gray-300"
                         >
                             <span>
-                                Get started{' '}
-                                <span className="hidden lg:inline">today</span>
+                                {t('getStarted')}{' '}
+                                <span className="hidden lg:inline">
+                                    {t('today')}
+                                </span>
                             </span>
                         </Link>
                         <div className="-mr-1 md:hidden">

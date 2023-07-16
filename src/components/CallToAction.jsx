@@ -1,12 +1,11 @@
 import Image from 'next/image'
 
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 
 export function CallToAction() {
     const { t } = useTranslation()
+
     const clients = [
         {
             id: 1,
@@ -15,8 +14,8 @@ export function CallToAction() {
             tag: t('clients.nerone.tag'),
             quote: `"${t('clients.nerone.testimonial')}"`,
             href: '#',
-            imageSrc:
-                'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
+            hasVideo: true,
+            imageSrc: 'https://www.youtube.com/embed/AnV4jEr5r3Q',
             imageAlt:
                 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
         },
@@ -27,6 +26,7 @@ export function CallToAction() {
             tag: t('clients.after.tag'),
             quote: `"${t('clients.after.testimonial')}"`,
             href: '#',
+            hasVideo: false,
             imageSrc:
                 'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
             imageAlt:
@@ -40,8 +40,8 @@ export function CallToAction() {
             tag: '@logoto_clothing',
             quote: '"Very punctual and creative, fully developed multiple projects following our brand values"',
             href: '#',
-            imageSrc:
-                'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
+            hasVideo: true,
+            imageSrc: 'https://www.youtube.com/embed/gLIWDpfqzRM',
             imageAlt:
                 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
             price: '$140',
@@ -64,10 +64,10 @@ export function CallToAction() {
                     {t('testimonialsIntro3')}
                 </p>
                 <Link
-                    href=""
+                    href="/#contact"
                     className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
-                    Contact Us
+                    {t('contactUs')}
                 </Link>
             </div>
 
@@ -89,11 +89,22 @@ export function CallToAction() {
                                 <div key={client.id} className="flex flex-col">
                                     <div className="relative mb-auto">
                                         <div className="relative h-72 w-full overflow-hidden rounded-lg">
-                                            <img
-                                                src={client.imageSrc}
-                                                alt={client.imageAlt}
-                                                className="h-full w-full object-cover object-center"
-                                            />
+                                            {client.hasVideo ? (
+                                                <iframe
+                                                    width="350"
+                                                    height="350"
+                                                    src={client.imageSrc}
+                                                    title="YouTube video player"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowFullScreen
+                                                ></iframe>
+                                            ) : (
+                                                <img
+                                                    src={client.imageSrc}
+                                                    alt={client.imageAlt}
+                                                    className="h-full w-full object-cover object-center"
+                                                />
+                                            )}
                                         </div>
                                         <div className="relative mt-4 text-center">
                                             <h3 className="text-2xl font-medium text-[#2BB849]">
@@ -109,20 +120,6 @@ export function CallToAction() {
                                                 {client.quote}
                                             </p>
                                         </div>
-                                        <div className="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
-                                            <div
-                                                aria-hidden="true"
-                                                className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-50"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="mt-6">
-                                        <a
-                                            href={client.href}
-                                            className="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-8 py-2 text-sm font-medium text-gray-900 hover:bg-gray-200"
-                                        >
-                                            i
-                                        </a>
                                     </div>
                                 </div>
                             ))}

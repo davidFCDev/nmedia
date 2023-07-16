@@ -4,6 +4,10 @@
     "introduction": "At NNmedia, we specialize in content creation and visual storytelling.",
     "introduction2": "Our mission is to magnify your brand's digital presence through tailor-made visuals and compelling storytelling. Allow us to assist you in creating an authentic and unforgettable online experience that elevates your brand's visibility and engages your audience.",
     "services": "Services",
+    "projects": "Projects",
+    "prices": "Pricing",
+    "getStarted": "Get Started",
+    "today": "today",
     "service1": "Picture Perfect: Professional Photography that Shines",
     "service1Desc": "Showcase your brand in the best light with our expertly captured professional photos that elevate your visual identity, captivate your audience, and leave a lasting impression.",
     "service2": "Product Video Mastery: Showcase Your Offerings in Stunning Detail",
@@ -20,6 +24,7 @@
     "satisfactionGuarantee2": "If the content we provide doesn't meet your expectations, we'll go above and beyond to make it right. With our unlimited revision policy, we'll tirelessly refine and tailor your content until it's absolutely perfect.",
     "satisfactionGuarantee3": "You deserve nothing less than exceptional quality for your social media presence. Trust us to deliver outstanding content that not only meets but exceeds your expectations, every single time. ",
     "satisfactionGuarantee4": "Take advantage of this limited-time offer and experience the difference for yourself. Your success is our success, and we're here to ensure you shine like never before.",
+    "contactUs": "Contact Us",
     "faq": {
         "title": "Frequently Asked Questions",
         "question1": "What types of content services do you offer?",
@@ -40,7 +45,7 @@
         "answer8": "We offer a range of content services, including professional photography, videography, visual storytelling, and social media content creation like posts, templates and etc. "
     },
     "pricing": {
-        "title": "Choose the plan which matches your needs",
+        "title": "Choose the plan which matches your needs:",
         "sparkePackage": {
             "title": "Starter Package:",
             "feature1": "Professionally taken photographs of your products or services (4 separate posts), suitable for all social media platforms",
