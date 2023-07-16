@@ -106,7 +106,7 @@ export function CallToAction() {
                                         <div className="relative h-72 w-full overflow-hidden rounded-lg">
                                             {client.hasVideo ? (
                                                 <iframe
-                                                    width="350"
+                                                    width="425"
                                                     height="350"
                                                     src={client.imageSrc}
                                                     title={client.name}
