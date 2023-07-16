@@ -44,7 +44,22 @@ export function CallToAction() {
             imageSrc: 'https://www.youtube.com/embed/gLIWDpfqzRM',
             imageAlt:
                 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
-            price: '$140',
+        },
+        {
+            id: 4,
+            name: 'Shortened',
+            hasVideo: true,
+            imageSrc: 'https://www.youtube.com/embed/N0KiNuaP3cQ',
+            imageAlt:
+                'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
+        },
+        {
+            id: 5,
+            name: 'Apeic Wristwraps',
+            hasVideo: true,
+            imageSrc: 'https://www.youtube.com/embed/DtlL3zBszPM',
+            imageAlt:
+                'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
         },
         // More products...
     ]
@@ -94,7 +109,7 @@ export function CallToAction() {
                                                     width="350"
                                                     height="350"
                                                     src={client.imageSrc}
-                                                    title="YouTube video player"
+                                                    title={client.name}
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                     allowFullScreen
                                                 ></iframe>
