@@ -1,7 +1,3 @@
-import Image from 'next/image'
-
-import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-faqs.jpg'
 import { Disclosure } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 import { useTranslation } from 'next-i18next'
@@ -22,10 +18,6 @@ export function Faqs() {
             answer: t('faq.answer3'),
         },
         {
-            question: t('faq.question4'),
-            answer: t('faq.answer4'),
-        },
-        {
             question: t('faq.question5'),
             answer: t('faq.answer5'),
         },
@@ -33,10 +25,18 @@ export function Faqs() {
             question: t('faq.question6'),
             answer: t('faq.answer6'),
         },
+        {
+            question: t('faq.question7'),
+            answer: t('faq.answer7'),
+        },
+        {
+            question: t('faq.question8'),
+            answer: t('faq.answer8'),
+        },
     ]
     return (
         <div
-            className="bg-gradient-to-b from-black via-[#2BB849] to-green-800"
+            className="bg-gradient-to-b from-black via-[#2BB849] to-green-800 pt-24"
             id="faq"
         >
             <div className="mx-auto max-w-7xl px-6 lg:px-8">

@@ -1,8 +1,8 @@
 {
     "title": "Unleash Your Story, Amplify Your Reach",
     "subtitle": "Crafting Captivating Content to Elevate Your Brand's Impact and Expand Your Audience",
-    "introduction": "At NNmediacontent, we specialize in content creation and visual storytelling. Our mission is to magnify your brand's digital presence through tailor-made visuals and compelling storytelling.",
-    "introduction2": "Allow us to assist you in creating an authentic and unforgettable online experience that elevates your brand's visibility and engages your audience.",
+    "introduction": "At NNmedia, we specialize in content creation and visual storytelling.",
+    "introduction2": "Our mission is to magnify your brand's digital presence through tailor-made visuals and compelling storytelling. Allow us to assist you in creating an authentic and unforgettable online experience that elevates your brand's visibility and engages your audience.",
     "services": "Services",
     "service1": "Picture Perfect: Professional Photography that Shines",
     "service1Desc": "Showcase your brand in the best light with our expertly captured professional photos that elevate your visual identity, captivate your audience, and leave a lasting impression.",
@@ -33,28 +33,37 @@
         "question5": "How can your e-commerce content services help improve my online store's conversion rate?",
         "answer5": "Our e-commerce content services focus on creating engaging product descriptions, high-quality product images, and persuasive call-to-action content. By optimizing your product pages with compelling content, we aim to capture your customers' attention, build trust, and ultimately increase your conversion rate.",
         "question6": "Can you assist with content creation for product launches and promotions? ",
-        "answer6": "Absolutely! We specialize in creating content for product launches and promotional campaigns. From product videos and lifestyle photography to engaging social media posts and email newsletters, we can help you generate buzz, create anticipation, and drive sales for your new products and special offers."
+        "answer6": "Absolutely! We specialize in creating content for product launches and promotional campaigns. From product videos and lifestyle photography to engaging social media posts and email newsletters, we can help you generate buzz, create anticipation, and drive sales for your new products and special offers.",
+        "question7": "Can you help with content creation for multiple platforms?",
+        "answer7": "Absolutely! We specialize in creating content for various platforms, including social media platforms like Instagram, Facebook, YouTube, TikTok and more. We tailor the content to suit the specific requirements and best practices of each platform. ",
+        "question8": "What types of content services do you offer?",
+        "answer8": "We offer a range of content services, including professional photography, videography, visual storytelling, and social media content creation like posts, templates and etc. "
     },
     "pricing": {
         "title": "Choose the plan which matches your needs",
         "sparkePackage": {
-            "title": "Sparkle Package",
-            "feature1": "Professionally done Photography of your products/services (2 Separate photography - based posts), which is suitable for all social media",
-            "feature2": "Management and maintenance of your online presence (1 social media) scheduled posting for social media"
+            "title": "Starter Package:",
+            "feature1": "Professionally taken photographs of your products or services (4 separate posts), suitable for all social media platforms",
+            "feature2": "Management of your online presence on one social media platform.",
+            "feature3": "Two informative posts per month.",
+            "feature4": "Scheduled social media posts."
         },
         "radiancePackage": {
-            "title": "Radiance Package",
-            "feature1": "Professionally done Photography of your products/services (2x the Starter Pass Value) suitable for all social media",
-            "feature2": "Professionally done Videography of your products/services suitable for all social media",
-            "feature3": "Management and maintenance of your online presence (3 social media) scheduled posting for social media",
-            "feature4": "Dedicated 5-day-a-week customer support for prompt assistance"
+            "title": "Plus Package:",
+            "feature1": "Professional photography of your products/services (valued at twice the Starter Pass value) suitable for all social media platforms.",
+            "feature2": "Professional videography of your products/services suitable for all social media platforms.",
+            "feature3": "Management and maintenance of your online presence on three social media platforms.",
+            "feature4": "4 informative posts per month.",
+            "feature5": "Scheduled social media posts.",
+            "feature6": "Dedicated customer support available five days a week for prompt assistance."
         },
         "brilliancePackage": {
-            "title": "Brilliance Package",
-            "feature1": "Unlimited Photography content suitable for all social media",
-            "feature2": "Unlimited Videography content suitable for all social media",
-            "feature3": "Maintaining all social media content",
-            "feature4": "24/7 Customer Support"
+            "title": "VIP Package:",
+            "feature1": "Unlimited photography content suitable for all social media platforms.",
+            "feature2": "Unlimited videography content suitable for all social media platforms.",
+            "feature3": "Unlimited informative posts per month.",
+            "feature4": "Maintenance of all social media content.",
+            "feature5": "24/7 customer support."
         }
     },
     "clients": {

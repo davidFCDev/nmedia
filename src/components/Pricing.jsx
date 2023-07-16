@@ -36,7 +36,7 @@ function Plan({ name, price, description, href, features, featured = false }) {
             className={clsx(
                 'flex flex-col rounded-3xl px-6 sm:px-8',
                 featured
-                    ? 'order-first bg-green-600 py-8 lg:order-none'
+                    ? 'order-first bg-green-500 py-8 lg:order-none'
                     : 'border border-green-600 lg:py-8'
             )}
         >
@@ -49,7 +49,7 @@ function Plan({ name, price, description, href, features, featured = false }) {
             >
                 {description}
             </p>
-            <p className="order-first font-display text-5xl font-light tracking-tight text-white">
+            <p className=" font-display text-5xl font-light tracking-tight text-white">
                 {price}
             </p>
             <ul
@@ -75,7 +75,7 @@ function Plan({ name, price, description, href, features, featured = false }) {
                 variant={featured ? 'solid' : 'outline'}
                 color="white"
                 className="mt-8"
-                aria-label={`Get started with the ${name} plan for ${price}`}
+                aria-label={`Get started with the ${name} plan`}
             >
                 Get started
             </Button>
@@ -101,11 +101,14 @@ export function Pricing() {
                 </div>
                 <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
                     <Plan
+                        featured
                         name={t('pricing.sparkePackage.title')}
                         href="/#contacts"
                         features={[
                             t('pricing.sparkePackage.feature1'),
                             t('pricing.sparkePackage.feature2'),
+                            t('pricing.sparkePackage.feature3'),
+                            t('pricing.sparkePackage.feature4'),
                         ]}
                     />
                     <Plan
@@ -117,6 +120,8 @@ export function Pricing() {
                             t('pricing.radiancePackage.feature2'),
                             t('pricing.radiancePackage.feature3'),
                             t('pricing.radiancePackage.feature4'),
+                            t('pricing.radiancePackage.feature5'),
+                            t('pricing.radiancePackage.feature6'),
                         ]}
                     />
                     <Plan
@@ -127,6 +132,7 @@ export function Pricing() {
                             t('pricing.brilliancePackage.feature2'),
                             t('pricing.brilliancePackage.feature3'),
                             t('pricing.brilliancePackage.feature4'),
+                            t('pricing.brilliancePackage.feature5'),
                         ]}
                     />
                 </div>
